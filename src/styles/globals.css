@@ -4,6 +4,43 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+@font-face {
+  font-family: "CustomFont";
+  src: url('/assets/fonts/belerensmallcaps.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Gilory";
+  src: url('/assets/fonts/Gilroy-Extrabold.tff') format('truetype');
+}
+
+body {
   font-family: 'DM Sans', sans-serif;
+  background-color: #0E0E12;
+  color: #fff;
+}
+
+.heading {
+  font-family: 'Gilory', sans-serif;
+}
+.title{
+  font-family: 'CustomFont';
+}
+.hero {
+  background: url('/assets/hero-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn {
+  background: linear-gradient(180deg, #5429E1 0%, #441EBF 100%);
+}
+
+.exclusive {
+  background: radial-gradient(40.62% 71.81% at 49.98% 50%, #1C1C26 0%, #111016 100%);
+  border: 8.52829px solid rgba(255, 255, 255, 0.228);
+  backdrop-filter: blur(23.0264px);
+  border-radius: 15.911px;
 }
