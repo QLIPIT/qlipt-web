@@ -84,6 +84,17 @@ export default function Home() {
                 <img src="/assets/Shape.png" className="absolute top-4 left-3" alt="" />
               </div>
             </div>
+            <div className="lg:flex justify-between sm:hidden md:hidden text-sm mt-10">
+              <button className="rounded-full px-10 p-2 bg-[#6C42F5]">All items</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Art</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Meme</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Photography</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Music</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Video</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">3D</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Virtual Reality</button>
+              <button className="rounded-full px-10 p-2 bg-transparent text0white">Domain Names</button>
+            </div>
             <div className="flex justify-between lg:py-10 flex-wrap">
               <Card />
               <Card />
