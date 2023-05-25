@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -9,7 +10,9 @@ const Hero = () => {
         </h1>
         <p className='text-base my-6 lg:w-[60%]'>Create, explore and trade in the first-ever African owned  NFT Markeplace.</p>
         <div className='flex lg:w-[60%] justify-between'>
-          <button className='btn lg:p-5 p-3 rounded-full lg:w-52 w-[48%]'>Create</button>
+          <Link href={"/create"}>
+            <button className='btn lg:p-5 p-3 rounded-full lg:w-52 w-[48%]'>Create</button>
+          </Link>
           <button className='bg-white text-black lg:p-5 p-3 rounded-full w-[48%] lg:w-52'>Explore</button>
         </div>
       </div>

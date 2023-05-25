@@ -35,6 +35,10 @@ body {
   background-size: cover;
 }
 
+.nav {
+  background: rgba(14, 14, 18, 0.82);
+}
+
 .btn {
   background: linear-gradient(180deg, #5429E1 0%, #441EBF 100%);
 }
@@ -54,4 +58,8 @@ input:focus,
 button:focus,
 textarea:focus {
   outline: none;
+}
+
+.eclipse{
+  background: rgba(22, 22, 30, 0.2);
 }

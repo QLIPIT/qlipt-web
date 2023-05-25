@@ -3,8 +3,8 @@ import React from 'react';
 
 const HeaderNav = () => {
   return (
-    <div>
-      <div className='px-32 p-8 fixed top-0 w-screen lg:block z-10 sm:hidden md:hidden'>
+    <div className=''>
+      <div className='px-32 nav p-8 fixed top-0 w-screen lg:block z-10 sm:hidden md:hidden'>
         <div className='flex justify-between'>
           <Link href={"/"}>
             <img src="/assets/logo.png" alt="" />
