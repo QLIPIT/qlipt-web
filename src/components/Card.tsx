@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Card = () => {
@@ -14,7 +15,9 @@ const Card = () => {
           <h5 className=''><span className='text-sm text-[#BEC2CA]'>Highest bid</span> 0.001 ETH</h5>
           <p className='text-sm'>New bid  🔥</p>
         </div>
-        <button className='p-3 bg-[#4B23CC] rounded-sm w-full'>Buy NFT</button>
+        <Link href={"/exhibit"}>
+          <button className='p-3 bg-[#4B23CC] rounded-sm w-full'>Buy NFT</button>
+        </Link>
       </div>
     </div>
   );

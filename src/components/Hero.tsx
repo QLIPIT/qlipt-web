@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <div className='hero lg:h-screen'>
-      <div className='relative lg:top-[40%] sm:py-20 md:py-20 lg:w-1/2 lg:mx-32 mx-4'>
+      <div className='relative lg:top-[40%] sm:py-20 md:py-20 lg:w-1/2 lg:mx-32 mx-6'>
         <h1 className='heading lg:text-7xl text-4xl font-bold '>
           NFT Martkeplace for African Creators
         </h1>
