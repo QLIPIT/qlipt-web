@@ -2,8 +2,10 @@ import React from 'react';
 
 const FooterNav = () => {
   return (
-    <div className='flex justify-evenly'>
-      <img className='w-32 h-12' src="/assets/logo.png" alt="" />
+    <div className='flex flex-wrap lg:justify-evenly sm:justify-between md:justify-between sm:px-10 md:px-10'>
+      <div className='sm:w-full'>
+        <img className='w-32 h-12 sm:mx-auto' src="/assets/logo.png" alt="" />
+      </div>
       <div>
         <p className='my-3'>Marketplace</p>
         <p className='my-3'>Live Auctions</p>

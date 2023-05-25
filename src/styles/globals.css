@@ -23,15 +23,16 @@ body {
 .heading {
   font-family: 'Gilory', sans-serif;
 }
-.title{
+
+.title {
   font-family: 'CustomFont';
 }
+
 .hero {
   background: url('/assets/hero-img.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .btn {
@@ -43,4 +44,8 @@ body {
   border: 8.52829px solid rgba(255, 255, 255, 0.228);
   backdrop-filter: blur(23.0264px);
   border-radius: 15.911px;
+}
+
+.owl-carousel .owl-item img {
+  width: auto !important;
 }
