@@ -6,6 +6,7 @@ import FrontLayout from "@/layout/FrontLayout";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
+import Card from "@/components/Card";
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 });
@@ -73,6 +74,25 @@ export default function Home() {
                 <TopCard />
 
               </OwlCarousel>
+            </div>
+          </section>
+          <section className="lg:py-12">
+            <div className="lg:flex justify-between">
+              <h1 className="heading lg:text-4xl text-2xl font-bold">Marketplace</h1>
+              <div className="relative lg:w-[80%] sm:my-6">
+                <input type="text" className="p-3 pl-10 border border-[#16161E] rounded-md bg-transparent color-[#16161E] w-full" placeholder="Search for items, collections and account" />
+                <img src="/assets/Shape.png" className="absolute top-4 left-3" alt="" />
+              </div>
+            </div>
+            <div className="flex justify-between lg:py-10 flex-wrap">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+
+            </div>
+            <div className="text-center my-10">
+              <button className="w-52 p-4 rounded-full px-10 border border-[#5328DE]">Load More</button>
             </div>
           </section>
         </main>

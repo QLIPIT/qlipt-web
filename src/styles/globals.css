@@ -49,3 +49,9 @@ body {
 .owl-carousel .owl-item img {
   width: auto !important;
 }
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
