@@ -8,7 +8,7 @@ const mintstore = () => {
       <section className='lg:p-32 p-6'>
         <div className='mb-10'>
           <h1 className='heading lg:text-5xl text-3xl font-bold'>QLIP Mintstore</h1>
-          <p className='my-3 text-[#BEC2CA]'>Mint token in 3 easy steps</p>
+          <p className='my-3 sm:text-xs text-[#BEC2CA]'>Mint token in 3 easy steps</p>
         </div>
         <div className='border border-[#0EAD6F] my-6 lg:flex justify-between p-6 rounded-sm'>
           <div className='lg:flex'>

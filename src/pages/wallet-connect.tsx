@@ -8,7 +8,7 @@ const Wallet = () => {
       <section className='lg:p-32 p-6'>
         <div className='mb-10'>
           <h1 className='heading lg:text-5xl text-3xl font-bold'>Connect your Wallet</h1>
-          <p className='my-3 text-[#BEC2CA]'>Connect with one of available wallet providers or create a new wallet. <br /> <a href="">What is a wallet?</a></p>
+          <p className='my-3 text-[#BEC2CA] sm:text-xs'>Connect with one of available wallet providers or create a new wallet. <br /> <a href="">What is a wallet?</a></p>
         </div>
         <div className='flex justify-between flex-wrap'>
           <div className='lg:w-[31%] w-[48%] lg:p-10 p-4 lg:my-6 my-2 border border-[#16161E] text-center rounded-sm'>

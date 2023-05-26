@@ -1,7 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 const HeaderNav = () => {
+  const [toggle, setToggle] = useState(false)
+
   return (
     <div className=''>
       <div className='px-32 nav p-8 fixed top-0 w-screen lg:block z-10 sm:hidden md:hidden'>
@@ -25,8 +27,20 @@ const HeaderNav = () => {
         <Link href={"/"}>
           <img src="/assets/logo.png" className='w-20 h-8 my-auto' alt="" />
         </Link>
-        <img src="/assets/bars.png" className='w-10 h-8 cursor-pointer' alt="" />
+        <img onClick={() => setToggle(!toggle)} src="/assets/bars.png" className='w-10 h-8 cursor-pointer' alt="" />
       </div>
+      {
+        toggle === true ? <div className='p-4 bg-[#16161E] text-sm'>
+          <p className='my-3'>Marketplace</p>
+          <p className='my-3'>Live Auctions</p>
+          <p className='my-3'>QLIP NFTs</p>
+          <p className='my-3'>Community</p>
+          <p className='my-3'>Mint Store</p>
+          <Link href={"/wallet-connect"} className='my-3'>
+            <button className='border border-[#5127DA] w-full p-2 px-6 rounded-full'>Connect Wallet</button>
+          </Link>
+        </div> : null
+      }
     </div>
   );
 };
