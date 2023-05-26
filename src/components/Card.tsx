@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = () => {
   return (
-    <div className='lg:w-[30%] md:w-[49%] md:my-6 sm:my-6 p-8 bg-[#141416] border rounded-sm border-[#353945]'>
+    <div className='lg:w-[30%] md:w-[49%] md:my-6 sm:my-6 lg:p-8 p-4 bg-[#141416] border rounded-sm border-[#353945]'>
       <img src="/assets/product.png" className='w-full' alt="" />
       <div className='mt-6'>
         <h1 className='heading font-bold text-xl'>African Mask</h1>
