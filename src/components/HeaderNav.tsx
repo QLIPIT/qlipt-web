@@ -15,7 +15,9 @@ const HeaderNav = () => {
             <p className='my-auto'>QLIP NFTs</p>
             <p className='my-auto'>Community</p>
             <p className='my-auto'>Mint Store</p>
-            <button className='border border-[#5127DA] px-6 rounded-full'>Connect Wallet</button>
+            <Link href={"/wallet-connect"}>
+              <button className='border border-[#5127DA] p-2 px-6 rounded-full'>Connect Wallet</button>
+            </Link>
           </div>
         </div>
       </div>
