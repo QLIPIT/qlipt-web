@@ -1,5 +1,6 @@
 import NotificationFlag from '@/components/NotificationFlag';
 import FrontLayout from '@/layout/FrontLayout';
+import Link from 'next/link';
 import React from 'react';
 
 const Create = () => {
@@ -18,7 +19,9 @@ const Create = () => {
             <div className='text-center'>
               <h1 className='heading font-bold text-2xl'>Single</h1>
               <p className='my-4 text-xs text-[#BEC2CA]'>Create a one of kind collectible</p>
-              <button className='bg-[#4B23CC] p-4 rounded-full w-52'>Create Single</button>
+              <Link href={'/create/single'}>
+                <button className='bg-[#4B23CC] p-4 rounded-full w-52'>Create Single</button>
+              </Link>
             </div>
           </div>
           <div className='border border-[#16161E] p-10 lg:w-[40%]'>
