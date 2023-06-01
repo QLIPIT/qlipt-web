@@ -1,7 +1,9 @@
+import NotificationFlag from '@/components/NotificationFlag';
 import FrontLayout from '@/layout/FrontLayout';
 import React, { useRef, useState } from 'react';
 
 const Single = () => {
+  const [step, setStep] = useState(1)
   const uploadRef = useRef<HTMLInputElement>(null)
   const [image, setFilePreview] = useState({
     type: "",
@@ -36,7 +38,7 @@ const Single = () => {
 
   return (
     <FrontLayout>
-      <section className='lg:p-32 p-6'>
+      {step === 1 ? <section className='lg:p-32 p-6'>
         <div className='mb-10'>
           <h1 className='heading lg:text-5xl text-3xl font-bold'>Create Single Collectible</h1>
           <p className='my-3 sm:text-xs text-[#BEC2CA]'>Switch to Multiple Collectible</p>
@@ -115,9 +117,42 @@ const Single = () => {
             <label className='text-sm'>Choose collection</label> <br />
             <p className='text-xs text-[#777E90]'>Choose an exiting collection or create a new one</p>
           </div> */}
-          <button className='p-3 bg-[#4B23CC] rounded-full my-20 w-44 text-xs'>Create item</button>
+          <button onClick={() => setStep(2)} className='p-3 bg-[#4B23CC] rounded-full my-20 w-44 text-xs'>Create item</button>
         </div>
-      </section>
+      </section> : step === 2 ? <div>
+        <section className='lg:p-32 p-6 flex justify-between'>
+          <div className=''>
+            <h1 className='heading lg:text-5xl text-3xl font-bold'>Add Sound Effect to NFT</h1>
+            <p className='my-3 sm:text-xs text-[#BEC2CA]'>Choose from our audio presets and make your NFT come alive</p>
+            <button className='p-2 rounded-full w-32 my-4 lg:float-right bg-[#4B23CC]'>Add Sound</button>
+            <div className='my-4'>
+              <audio controls className='w-full'>
+                <source src="" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div className="relative my-3 sm:my-6">
+              <input type="text" className="p-3 pl-10 border border-[#16161E] rounded-md bg-transparent color-[#16161E] w-full" placeholder="Search for sound effects" />
+              <img src="/assets/Shape.png" className="absolute top-4 left-3" alt="" />
+            </div>
+            <div className='flex flex-wrap'>
+              <div className='w-[30%] my-3 border border-[#16161E] rounded-sm lg:p-6 p-3 text-center'>
+                <img src="/assets/TWT.png" className='mx-auto' alt="" />
+                <p className='my-4 text-sm'>Steel Clash</p>
+              </div>
+            </div>
+          </div>
+          <div className='exclusive lg:w-[40%] md:w-[49%] sm:hidden sm:my-6 md:my-4'>
+            <img src="/assets/art2.png" className='w-full' alt="" />
+            <div className='text-center p-6'>
+              <h1 className='font-bold lg:text-xl text-lg title'>OSHUN</h1>
+              <p className='text-xs text-[#FFF9DF] my-3'>Oshun is considered one of the most powerful of all orishas, her temple is filled with treasures and water rune magic.</p>
+
+              <h3 className='text-[#878787] mt-6 title font-bold lg:text-xl text-lg'>40,000 QLIP</h3>
+            </div>
+          </div>
+        </section>
+        <NotificationFlag />
+      </div> : null}
     </FrontLayout>
   );
 };
