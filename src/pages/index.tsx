@@ -20,7 +20,7 @@ export default function Home() {
           <section className="lg:py-12">
             <div className="text-center">
               <h1 className="heading my-3 lg:text-4xl text-2xl font-bold">Exclusive QLIP NFTs</h1>
-              <p className="lg:text-sm text-xs">Afrian is home to a large variety of races, some native to its lands and some hailing from other realms. </p>
+              <p className="lg:text-sm text-xs">Africa is home to a large variety of races, some native to its lands and some hailing from other realms. </p>
             </div>
             <div className="flex flex-wrap justify-between my-10">
               <ExclusiveCard />

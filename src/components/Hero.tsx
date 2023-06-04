@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className='heading lg:text-7xl text-4xl font-bold '>
           NFT Martkeplace for African Creators
         </h1>
-        <p className='text-base my-6 lg:w-[60%]'>Create, explore and trade in the first-ever African owned  NFT Markeplace.</p>
+        <p className='text-base my-6 lg:w-[60%]'>Create, explore and trade in the first-ever African owned  NFT Marketplace.</p>
         <div className='flex lg:w-[60%] justify-between'>
           <Link href={"/create"} className='sm:w-full sm:w-[48%] sm:mr-2'>
             <button className='btn lg:p-5 p-3 rounded-full lg:w-52 sm:w-full'>Create</button>

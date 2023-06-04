@@ -60,7 +60,7 @@ const Single = () => {
             <input type="text" placeholder='e. g. “After purchasing you will able to recived the logo...”' className='p-3 border border-[#16161E] bg-transparent w-full' />
           </div>
           <div className='my-2'>
-            <label className='text-sm'>Price in BNB</label> <br />
+            <label className='text-sm'>Price in Venom</label> <br />
             <input type="number" placeholder='100' className='p-3 border border-[#16161E] bg-transparent w-full' />
           </div>
           <div className='my-2'>

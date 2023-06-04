@@ -16,7 +16,7 @@ const FooterNav = () => {
       <div>
         <p className='my-3'>Twitter</p>
         <p className='my-3'>Telegram</p>
-        <p className='my-3'>Youtube</p>
+        <p className='my-3'>YouTube</p>
         <p className='my-3'>Medium</p>
       </div>
     </div>
